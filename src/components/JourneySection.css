@@ -1,0 +1,102 @@
+/* JourneySection.css */
+
+.journey-section {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #002e5f;
+    margin-bottom: 2rem;
+  }
+  
+  .content h3 {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cards-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 320px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #00bfff 0%, #002e5f 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .icon-wrapper {
+    transform: rotate(360deg);
+  }
+  
+  .icon {
+    color: #ffffff;
+    font-size: 40px;
+  }
+  
+  .card h6 {
+    font-size: 1.8rem;
+    color: #002e5f;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    color: #555;
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 992px) {
+    .cards-row {
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      max-width: 45%;
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
+  }
+  

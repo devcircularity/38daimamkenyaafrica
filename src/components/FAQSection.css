@@ -1,0 +1,95 @@
+/* src/components/FAQSection.css */
+
+.faq {
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .faq h1 {
+    font-size: 2.5rem;
+    color: #002e5f;
+    margin-bottom: 3rem;
+  }
+  
+  .accordion-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-button {
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .accordion-button.active {
+    background-color: #e0f7fa;
+    color: #007c91;
+  }
+  
+  .accordion-button .icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-button .icon::before {
+    content: '+';
+  }
+  
+  .accordion-button .icon.rotate::before {
+    content: '-';
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-content.show {
+    max-height: 500px;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  
+  .accordion-content p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  @media (max-width: 576px) {
+    .faq h1 {
+      font-size: 2rem;
+    }
+  
+    .accordion-button {
+      font-size: 1.4rem;
+      padding: 1.2rem;
+    }
+  
+    .accordion-content p {
+      font-size: 1.3rem;
+    }
+  }
+  
